@@ -1,10 +1,10 @@
-# 🧩 mediawiki_import_flutter
+# mediawiki_import_flutter
 
 Ứng dụng Flutter hỗ trợ giao diện nhập liệu và import nội dung lên **MediaWiki**, sử dụng cho dự án “WikiCrop - Mediawiki”.
 
 ---
 
-## 📘 Giới thiệu
+## Giới thiệu
 
 Ứng dụng này cung cấp giao diện đồ họa (GUI) cho người dùng để:
 
@@ -16,7 +16,7 @@
 
 ---
 
-## ⚙️ Cấu hình khi build
+## Cấu hình khi build
 
 Khi build Flutter, cần **sao chép thư mục `python` (Thư mục chứa file `run.exe` bản build của mediawiki-import_python)** vào cạnh file `.exe` của Flutter build.
 Cụ thể:
@@ -28,7 +28,7 @@ python/
    └── run.exe     # Bản build của mediawiki-import_python
 ```
 
-👉 vào:
+vào:
 
 ```
 \build\windows\x64\runner\Release\
@@ -36,7 +36,7 @@ python/
 
 ---
 
-## 🚀 Chạy ứng dụng
+## Chạy ứng dụng
 
 ### Chạy trong môi trường phát triển
 
@@ -50,7 +50,7 @@ Hãy cập nhật lại thành đường dẫn thực tế nơi chứa file `run
 
 ---
 
-## 🐍 Build file Python thành .exe
+## Build file Python thành .exe
 
 Để đóng gói phần Python thành file thực thi duy nhất, dùng lệnh:
 
@@ -63,18 +63,18 @@ Sau đó, đặt file `run.exe` này vào thư mục `python` bên cạnh file `
 
 ---
 
-## 🔒 Gợi ý bảo mật
+##  Gợi ý bảo mật
 
 Nếu sử dụng trong môi trường thật, **không nên** lưu mật khẩu trực tiếp.
 Thay vào đó, hãy cấu hình xác thực thông qua **bot password** hoặc **token** để đảm bảo an toàn cho tài khoản MediaWiki.
 
 ---
 
-## 📚 Thông tin thêm
+## Thông tin thêm
 
 * Flutter: [https://docs.flutter.dev/](https://docs.flutter.dev/)
 * MediaWiki API: [https://www.mediawiki.org/wiki/API:Main_page](https://www.mediawiki.org/wiki/API:Main_page)
 
 ---
 
-🧠 *Dự án này là một phần trong hệ thống hỗ trợ nhập liệu tự động cho MediaWiki, kết hợp giữa Flutter (giao diện), Python (xử lý chính), và MediaWiki API.*
+ *Dự án này là một phần trong hệ thống hỗ trợ nhập liệu tự động cho MediaWiki, kết hợp giữa Flutter (giao diện), Python (xử lý chính), và MediaWiki API.*
