@@ -51,7 +51,7 @@ wikimedia-import/
   * Kiểm tra quyền người dùng (`edit` và `createpage` bắt buộc để có thể tạo trang).
   * Chọn giữa **nhập trực tiếp lên Wiki** hoặc **xuất file zip** kết quả.
 
-### 🧩 2. `mediawiki_import_flutter` – Phần giao diện (Frontend)
+### 2. `mediawiki_import_flutter` – Phần giao diện (Frontend)
 
 * Xây dựng bằng **Flutter** (hiện hỗ trợ **desktop Windows**).
 * Kết hợp với Python thông qua gọi exe.
@@ -61,7 +61,7 @@ wikimedia-import/
   * Quản lý danh sách file `.docx`.
   * Theo dõi tiến trình chuyển đổi và import.
 
-### 🐍 3. `mediawiki-import_python` – Phần xử lý logic
+### 3. `mediawiki-import_python` – Phần xử lý logic
 
 * Viết bằng **Python**, đảm nhiệm toàn bộ xử lý nền:
 
@@ -73,7 +73,7 @@ wikimedia-import/
 
 ---
 
-## 🔐 Yêu cầu tài khoản
+## Yêu cầu tài khoản
 
 Để **import nội dung trực tiếp lên Wiki**, tài khoản cần có:
 
@@ -85,9 +85,9 @@ Nếu không đủ quyền, người dùng vẫn có thể chọn **xuất file 
 
 ---
 
-## 🚀 Cách sử dụng nhanh
+## Cách sử dụng nhanh
 
-### 🔧 Cách 1: Chạy ứng dụng đã build
+### Cách 1: Chạy ứng dụng đã build
 
 1. Mở thư mục `mediawiki-import_exe/`.
 2. Chạy file `mediawiki_import.exe`.
@@ -97,7 +97,7 @@ Nếu không đủ quyền, người dùng vẫn có thể chọn **xuất file 
    * **Import trực tiếp** lên Wiki.
    * **Tải về file zip** (định dạng Wikitext).
 
-### 🧠 Cách 2: Chạy từ mã nguồn
+### Cách 2: Chạy từ mã nguồn
 
 Nếu muốn phát triển hoặc chỉnh sửa:
 
@@ -124,7 +124,7 @@ Nếu muốn phát triển hoặc chỉnh sửa:
 
 ---
 
-## Tác giả & Liên hệ
+## Tác giả
 
 **Tác giả:** Chương Chương
 **Phiên bản hiện tại:** v1.0.0 (build đầu tiên – chỉ hỗ trợ Windows Desktop, chỉ hỗ trợ import và xuất file định dạng wikitext với docx với các định dạng cơ bản)
