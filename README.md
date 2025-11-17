@@ -117,10 +117,44 @@ Nếu muốn phát triển hoặc chỉnh sửa:
    ```
 
 ---
+## Chi tiết sử dụng
+### 1. Chế độ Export (Xuất file ZIP chứa Wikitext)
+#### Các bước sử dụng
+1. Mở ứng dụng mediawiki_import.exe.
+2. Nhập đường dẫn thư mục chứa các file docx.
+3. Chọn chế độ Export.
 
+
+Ứng dụng sẽ:
+
+* Tự động xử lý từng file .docx.
+* Chuyển đổi sang Wikitext.
+* Đóng gói toàn bộ kết quả vào một file ZIP và tải về thư mục download mặc định của máy.
+
+
+### 2. Chế độ Import (Chuyển đổi và tạo bài viết lên mediawiki)
+#### Các bước sử dụng
+
+1. Mở ứng dụng mediawiki_import.exe.
+2. Nhập thông tin tài khoản (username & password, baseurl)
+3. Chọn kiểm tra (Ứng dụng sẽ gọi api để kiểm tra thông tin, tài khoản yêu cầu có quyền create và edit để thực hiện import, khi có quyền sẽ có màu xanh ngược lại màu đỏ)
+5. Nhập đường dẫn thư mục chứa các file docx.
+6. Chọn chế độ Import. (Có thể chọn import overwrite existing pages để ghi đè hay cập nhật các bài viết đã có nếu nội dung khác).
+
+Ứng dụng sẽ:
+
+* Tự động xử lý từng file .docx (chuyển sang wikitext và gọi api thêm bài mới).
+* Sau khi hoàn tất sẽ hiển thị kết quả thêm mới.
+* Lưu ý việc xử lý diễn ra tuần tự nên thời gian sẽ phụ thuộc vào số lượng file
+    
+---
 ## Ghi chú
 
 * Người dùng có trách nhiệm đảm bảo tài khoản Wiki của mình hợp lệ và được cấp quyền chỉnh sửa/truy cập cần thiết.
+* Các file docx cần theo định dạng mới có thể chuyển đúng sang wikitext (ví dụ với tiêu đề cần bắt đầu từ heading 2 sẽ tương ứng tiêu đề trong wikitext, các định dạng khác thì tương ứng)
+* Việc chuyển đổi chỉ hỗ trợ các định dạng cơ bản như heading, văn bản, danh sách, liên kết, bảng,... Các định dạng phức tạp hay đặc thù của wikitext cần được thực hiện và chỉnh sửa tại wikitext.
+* Gợi ý: Với định dạng phức tạp nếu có thể, có thể viết trực tiếp trong file docx như văn bản thường.
+
 
 ---
 
