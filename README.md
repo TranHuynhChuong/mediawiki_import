@@ -125,12 +125,14 @@ Nếu muốn phát triển hoặc chỉnh sửa:
 3. Chọn chế độ Export.
 
 
-Ứng dụng sẽ:
+**Quy trình**
 
-* Tự động xử lý từng file .docx.
-* Chuyển đổi sang Wikitext.
-* Đóng gói toàn bộ kết quả vào một file ZIP và tải về thư mục download mặc định của máy.
+1. Nhập đường dẫn thư mục chứa các file doc và chọn export.
+2. Ứng dụng duyệt từng file và chuyển đổi, sau đó lưu tất cả vào file zip.
+3. Lưu tại thư mục download mặc định của máy tính.
 
+**Kết quả:**
+Thư mục zip được tải về tại thư mục download của hệ thống.
 
 ### 2. Chế độ Import (Chuyển đổi và tạo bài viết lên mediawiki)
 #### Các bước sử dụng
@@ -138,15 +140,32 @@ Nếu muốn phát triển hoặc chỉnh sửa:
 1. Mở ứng dụng mediawiki_import.exe.
 2. Nhập thông tin tài khoản (username & password, baseurl)
 3. Chọn kiểm tra (Ứng dụng sẽ gọi api để kiểm tra thông tin, tài khoản yêu cầu có quyền create và edit để thực hiện import, khi có quyền sẽ có màu xanh ngược lại màu đỏ)
-5. Nhập đường dẫn thư mục chứa các file docx.
-6. Chọn chế độ Import. (Có thể chọn import overwrite existing pages để ghi đè hay cập nhật các bài viết đã có nếu nội dung khác).
+4. Nhập đường dẫn thư mục chứa các file docx.
+5. Chọn chế độ Import. (Có thể chọn import overwrite existing pages để ghi đè hay cập nhật các bài viết đã có nếu nội dung khác).
 
-Ứng dụng sẽ:
-
-* Tự động xử lý từng file .docx (chuyển sang wikitext và gọi api thêm bài mới).
 * Sau khi hoàn tất sẽ hiển thị kết quả thêm mới.
 * Lưu ý việc xử lý diễn ra tuần tự nên thời gian sẽ phụ thuộc vào số lượng file
-    
+
+**Quy trình**
+
+i. Người dùng nhập thông tin đăng nhập và chọn check.
+
+ii. Kiểm tra đăng nhập, hợp lệ thì cho phép import.
+
+1. Nhập đường dẫn chứa thư mục chứa các file docx.
+2. Chọn import.
+3. Ứng dụng thực hiện đăng nhập, lấy token (gửi kèm yêu cầu khi tạo bài viết).
+4. Duyệt qua các file docx trong thư mục (nếu đường dẫn hợp lệ)
+5. Thực hiện chuyển đổi file sang wikitext.
+6. Gọi Api để thêm bài viết.
+7. Lưu kết quả trả về vào danh sách kết quả.
+8. Hiển thị danh sách kết quả thao tác.
+
+
+**Kết quả**
+* Kết quả thao tác trên từng file được hiển thị
+* Bài viết mới được tạo với title tương ứng tên file
+
 ---
 ## Ghi chú
 
